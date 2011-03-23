@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ 	<xs:schema 
+ 		targetNamespace="http://br.com.thecodebakers.hpp/hppfreebackup" 
+ 		elementFormDefault="qualified" 
+ 		xmlns:tns="http://br.com.thecodebakers.hpp/hppfreebackup"
+ 		xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<!-- Cada entrada é composta pelo texto1 - UUID do Local, e pelo texto2 - dados do local encriptados -->
+    <xs:complexType name="TEntrada">
+    	<xs:sequence>
+    		<xs:element name="texto1" type="xs:string"></xs:element>
+    		<xs:element name="texto2" type="xs:string"></xs:element>
+    	</xs:sequence>
+    </xs:complexType>
+
+	<!-- Este é o vetor de entradas do banco -->
+    <xs:complexType name="TEntradas">
+    	<xs:sequence>
+    		<xs:element name="entrada" type="tns:TEntrada"></xs:element>
+    	</xs:sequence>
+    </xs:complexType>
+
+	<!-- O elemento versaoData representa o DATABASE_VERSION.
+		 O elemento hashTexto é o hashcode MD5 da lista de dados, encriptada, em formato plaintext, sem os tags, separada por ponto-e-vírgula.
+		 o elemento data é a data e hora em que foi feito este backup.
+	 -->
+	<xs:complexType name="TBackup">
+		<xs:sequence>
+	   		<xs:element name="versaoData" type="xs:string"></xs:element>
+	   		<xs:element name="hashTexto" type="xs:string"></xs:element>
+	   		<xs:element name="data" type="xs:dateTime"></xs:element>
+	   		<xs:element name="entradas" type="tns:TEntradas"></xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:element name="hppfreeBackup" type="tns:TBackup"></xs:element>
+    
+</xs:schema>

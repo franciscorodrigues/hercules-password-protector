@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="br.com.thecodebakers.hppfree"
+      android:versionCode="1010002"
+      android:versionName="@string/VERSAO">
+    <uses-sdk android:minSdkVersion="7" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <application android:icon="@drawable/icon01" android:label="@string/VERSAO" >
+        <activity android:name=".activities.ListaComDados01" android:theme="@style/imagem">
+        	<intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.ListaVazia01" android:theme="@style/imagem">
+        	<intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+                <activity android:name=".activities.EditarDados03" android:theme="@style/imagem">
+        	<intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.MostrarLista02" android:theme="@style/imagem">
+        	<intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+         <activity android:name=".activities.AlterarSenha20" android:theme="@style/imagem">
+        	<intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>   
+         <activity android:name=".activities.Ajuda" android:theme="@style/imagem">
+        	<intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>    
+        <!-- <service android:name=".util.HPPUpdateService" android:enabled="true"/>-->
+
+                
+    </application>
+    
+    
+</manifest>

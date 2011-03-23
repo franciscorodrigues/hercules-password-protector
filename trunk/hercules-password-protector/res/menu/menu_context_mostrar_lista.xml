@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+  
+    <item android:id="@+id/mnuCntEditar"
+	      android:title="@@string/lblEditar" /> 
+	         
+	<item android:id="@+id/mnuCntExcluir"
+	      android:title="@string/lblBtnExcluir" />	
+</menu>

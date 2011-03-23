@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<item android:id="@+id/mnuSalvar"
+	      android:title="@string/lblBtnSalvar" />
+	      
+	<item android:id="@+id/mnuCancelar"
+	      android:title="@string/lblBtnCancelar" />
+	      
+	<item android:id="@+id/mnuAjuda"
+	      android:title="@string/lblBtnAjuda" />
+</menu>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+
+	<TextView 
+		android:text="@string/labelSenha"
+		style="@style/titulo"
+		android:layout_centerHorizontal="true"
+		android:layout_alignParentTop="true" 
+		android:layout_height="wrap_content" 
+		android:layout_width="fill_parent"  
+		android:id="@+id/editText1"
+		/>
+	<EditText 
+   		android:layout_below="@+id/editText1"
+		android:maxLines="1" 
+   		android:layout_centerHorizontal="true"
+		android:id="@+id/editSenha" 
+		android:layout_height="wrap_content"   
+		android:layout_width="fill_parent" 
+		android:password="true"
+		/>
+
+
+	
+	<TextView 
+   		android:layout_below="@+id/editSenha"
+   		android:layout_centerHorizontal="true"
+		style="@style/titulo"
+		android:text="@string/lblNovaSenha"
+		android:layout_height="wrap_content" 
+		android:layout_width="fill_parent"  
+		android:id="@+id/editTex22"/>
+	<EditText 
+   		android:layout_below="@+id/editTex22"
+   		android:layout_centerHorizontal="true"
+		android:id="@+id/novaSenha" 
+		android:maxLines="1" 
+		android:layout_height="wrap_content"   
+		android:layout_width="fill_parent"
+		android:password="true"
+		/>
+
+
+
+	<TextView 
+   		android:layout_below="@+id/novaSenha"
+   		android:layout_centerHorizontal="true"
+		style="@style/titulo"
+		android:text="@string/lblConfirmarSenha"
+		android:layout_height="wrap_content" 
+		android:layout_width="fill_parent"  
+		android:id="@+id/lbl33"/>
+	<EditText 
+   		android:layout_below="@+id/lbl33"
+   		android:layout_centerHorizontal="true"
+		android:id="@+id/confirmarSenha" 
+		android:maxLines="1" 
+		android:layout_height="wrap_content"   
+		android:layout_width="fill_parent"
+		android:password="true"
+		/>
+	
+	   	<ImageView
+	   		android:layout_alignParentBottom="true"
+	   		android:layout_alignParentLeft="true"
+	   		android:src="@drawable/ok"
+	   		android:layout_gravity="left" 
+			android:id="@+id/btnSalvar" 
+			android:layout_height="wrap_content" 
+			android:layout_width="wrap_content" 
+			android:onClick="salvar"
+			></ImageView>	
+		<ImageView
+	   		android:layout_alignParentBottom="true"
+	   		android:layout_alignParentRight="true"
+	   		android:src="@drawable/cancelar"
+	   		android:layout_gravity="left" 
+			android:id="@+id/btnCancelar" 
+			android:layout_height="wrap_content" 
+			android:layout_width="wrap_content" 
+			android:onClick="cancelar"
+			></ImageView>
+</RelativeLayout> 
