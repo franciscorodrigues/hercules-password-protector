@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, Hpp01Principal!</string>
+    <string name="app_name">Hercules</string>
+    <string name="lblListaComDados01_titulo">Hércules Password Protector</string>
+    <string name="labelSenha">Senha</string>
+    <string name="lblNovaSenha">Nova Senha</string>
+    <string name="lblConfirmarSenha">Confirmar Senha</string>
+    <string name="lblBtnAbrir">Abrir</string>
+    <string name="lblBtnFechar">Fechar</string>
+    <string name="lblBtnAlterarSenha">Alterar Senha</string>
+    <string name="lblBtnIncluirRegistro">Incluir Registro</string>
+    <string name="lblBtnAjuda">Ajuda</string>
+    <string name="lblLocal">Local</string>
+    <string name="lblTextoSecreto">Texto Secreto</string>
+    <string name="lblBtnExcluir">Excluir</string>
+    <string name="lblBtnSalvar">Salvar</string>
+    <string name="lblBtnCancelar">Cancelar</string>
+    <string name="lblEditar">Editar</string>
+    <string name="lbl_ajuda">Para ajuda, selecione o botão de menu.</string>
+    <string name="msg_senha_nao_confere">A senha informada é diferente da confirmação</string>
+    <string name="msg_senha_invalida">A senha informada é inválida</string>
+    <string name="msg_senha_tamanho_formato_invalida">A senha deve ter entre 8 e 24 caracteres. Quanto maior, melhor a segurança.</string>
+    <string name="msg_campo_local_obrigatorio">O campo &quot;Local&quot; é obrigatório</string>
+    <string name="msg_campo_local_duplicado">O &quot;Local&quot; já existe no cofre.</string>
+    <string name="msg_campo_textosecreto_obrigatorio">O campo &quot;Texto Secreto&quot; é obrigatório</string>
+    <string name="msg_inserido">O registro foi inserido com sucesso</string>
+    <string name="msg_alterado">O registro foi alterado</string>
+    <string name="msg_alteracoes_pendentes">As alterações pendentes serão perdidas. Confirma sua opção?</string>
+    <string name="msg_sem_registro">Nenhum registro na lista</string>
+    <string name="opc_sim">SIM</string>
+    <string name="opc_nao">NÃO</string>
+    <string name="opc_ok">OK</string>
+    <string name="opc_cancelar">Cancelar</string>
+    
+    <string name="msg_senha_igual_a_atual">A senha é igual a atual. Não será alterada.</string>
+    <string name="msg_senha_alerada">A senha foi alterada.</string>
+    <string name="msg_erro_alteracao_senha">Ocorreu um pŕoblema ao alterar a senha.</string>
+    <string name="msg_confirmar_exclusao">Deseja mesmo excluir?</string>
+    <string name="tit_ajuda">Protetor de senhas</string>
+    <string name="tit_ajuda2">Comandos básicos</string>
+    <string name="tit_abrir">Abrir o cofre</string>
+    <string name="tit_fechar">Fechar o cofre</string>
+    <string name="tit_novo">Inserir registro</string>
+    <string name="tit_ok">Confirmar</string>
+    <string name="tit_cancelar">Cancelar</string>
+    <string name="tit_ajuda3">Use o botão \"menu\"</string>
+    <string name="tit_ajuda4">O botão \"back\" retorna</string>
+    <string name="tit_ajuda5">Para adquirir a versão paga:</string>
+    <string name="tit_ajuda6">www.thecodebakers.com.br</string>
+    <string name="VERSAO">Hercules Password Protector (1.01.0002)</string>
+    <string name="menu_salvar_backup">Salvar backup</string>
+    <string name="menu_restaurar_backup">Restaurar Backup</string>
+    <string name="msg_salvar_backup_ok">O backup foi salvo em seu sdcard.</string>
+    <string name="msg_erro_salvar_backup">Problema ao salvar backup.</string>
+    <string name="msg_erro_restaurar_backup">Problema ao tentar restaurar backup.</string>
+    <string name="msg_erro_restaurar_backup_hashcode">Hashcode ou senha do backup inválidos.</string>
+    <string name="msg_erro_restaurar_backup_hashcode_entrada">Há entradas inválidas no backup. Restauração abortada.</string>
+    <string name="msg_erro_restaurar_backup_xml_invalido">Arquivo de backup inválido.</string>
+    <string name="msg_erro_restaurar_backup_versao_incompativel">A versão do backup é incompatível.</string>
+    <string name="msg_erro_salvar_problema_media">Problema no sdcard ao salvar backup.</string>
+    <string name="msg_confirmar_restaurar_backup">Restaurar o backup apagará tudo o que estava armazenado. Tem certeza?</string>
+    <string name="msg_informar_senha_backup">Informe a senha do backup.</string>
+    <string name="msg_backup_restaurado">Backup restaurado. Registros adicionados:</string>
+    
+</resources>

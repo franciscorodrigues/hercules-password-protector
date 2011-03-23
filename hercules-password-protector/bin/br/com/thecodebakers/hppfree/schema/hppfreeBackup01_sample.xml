@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:hppfreeBackup xmlns:tns="http://br.com.thecodebakers.hpp/hppfreebackup" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://br.com.thecodebakers.hpp/hppfreebackup hppfreebackup.xsd ">
+  <tns:versaoData>1</tns:versaoData>
+  <tns:hashTexto>-12023923</tns:hashTexto>
+  <tns:data>2001-12-31T12:00:00</tns:data>
+  <tns:entradas>
+    <tns:entrada>
+      <tns:texto1>texto1</tns:texto1>
+      <tns:texto2>texto2</tns:texto2>
+    </tns:entrada>
+  </tns:entradas>
+</tns:hppfreeBackup>

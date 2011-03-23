@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+ xmlns:android="http://schemas.android.com/apk/res/android"
+ android:orientation="vertical"
+ android:layout_width="fill_parent"
+ android:layout_height="fill_parent"
+>
+	<ListView android:id="@android:id/list"
+	 	android:layout_width="fill_parent"
+	  	android:layout_height="fill_parent" 
+	  	android:layout_weight="1"
+	  	android:background="#999999"
+	  	
+	  	/>
+
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		>
+			<ImageView
+				android:layout_width="wrap_content"
+  				android:layout_height="wrap_content"
+				android:src="@drawable/inserir_registro"
+				android:id="@+id/btnIncuir" 
+				android:onClick="incluirRegistro"
+				android:layout_alignParentLeft="true"
+				></ImageView>	
+
+			<ImageView 
+				android:layout_width="wrap_content"
+  				android:layout_height="wrap_content"
+				android:id="@+id/btnAlterarSenha" 
+				android:src="@drawable/cadeado_aberto"
+				android:onClick="fechar"
+				android:layout_alignParentRight="true"
+				></ImageView>							
+			
+							  	
+	 </RelativeLayout>
+	
+	
+
+</LinearLayout>

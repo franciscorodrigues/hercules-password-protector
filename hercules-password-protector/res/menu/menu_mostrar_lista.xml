@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+  	
+  	<item android:id="@+id/mnuIncluirRegistro"
+	      android:title="@string/lblBtnIncluirRegistro" />
+	      
+	<item android:id="@+id/mnuAlterarSenha"
+	      android:title="@string/lblBtnAlterarSenha" />  
+
+    <item android:id="@+id/mnuFechar"
+	      android:title="@string/lblBtnFechar" /> 
+	         
+	<item android:id="@+id/mnuAjuda"
+	      android:title="@string/lblBtnAjuda" />	
+
+	<item android:id="@+id/mnuSalvarBackup"
+	      android:title="@string/menu_salvar_backup" />
+
+	<item android:id="@+id/mnuRestaurarBackup"
+	      android:title="@string/menu_restaurar_backup" />		      		      
+	
+</menu>
