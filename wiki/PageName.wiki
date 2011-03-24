@@ -1,0 +1,13 @@
+#summary Introdução
+
+= Introdução =
+
+Bem vindo ao projeto Hercules Password Protector, do grupo The Code Bakers.
+
+= Details =
+
+O manual de uso do Hercules Password Protector está AQUI.
+
+O guia de setup da plataforma de desenvolvimento Android está AQUI.
+
+O guia de setup do projeto Hercules Password Protector está AQUI.
