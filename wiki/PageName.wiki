@@ -11,3 +11,5 @@ O manual de uso do Hercules Password Protector está [http://code.google.com/p/h
 O guia de setup da plataforma de desenvolvimento Android está [http://developer.android.com/sdk/index.html AQUI].Estamos traduzindo e criando um documento em Português.
 
 O guia de setup do projeto Hercules Password Protector está [http://code.google.com/p/hercules-password-protector/downloads/detail?name=Guia_de_configuracao_do_projeto.pdf&can=2&q= AQUI].
+
+Não temos uma versão binária para download direto. Você pode baixar e fazer build. Em breve, teremos uma versão disponível no Android Market.
