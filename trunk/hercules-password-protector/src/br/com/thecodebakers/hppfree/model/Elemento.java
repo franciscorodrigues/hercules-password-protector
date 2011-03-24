@@ -1,5 +1,9 @@
 /*
- * Copyright (C) 2011 The Code Backers - Cleuton Sampaio e Francisco Rodrigues
+ * Copyright (C) 2011 The Code Bakers
+ * Authors: Cleuton Sampaio e Francisco Rodrigues
+ * e-mail: thecodebakers@gmail.com
+ * Project: http://code.google.com/p/hercules-password-protector
+ * Site: http://thecodebakers.blogspot.com
  *
  * Licensed under the GNU GPL, Version 3.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -12,7 +16,11 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
+ * 
+ * @author Cleuton Sampaio e Francisco Rogrigues - thecodebakers@gmail.com
  */
+
+
 
 package br.com.thecodebakers.hppfree.model;
 
@@ -22,6 +30,16 @@ import java.security.NoSuchAlgorithmException;
 import java.text.DateFormat;
 import java.util.Date;
 
+/**
+ * Principal entidade da aplicação. Uma instância de "Elemento" representa um registro guardado no
+ * cofre. A propriedade "uuid" serve como chave primária, mas a propriedade "Local" é a ordem natural.
+ * 
+ * O método "hashCode()" foi sobrescrito. O Hashcode gerado pela classe é usado ao decriptar, de modo
+ * a verificar se a senha utilizada foi válida.
+ * 
+ * @author Cleuton Sampaio e Francisco Rogrigues - thecodebakers@gmail.com
+ *
+ */
 public class Elemento implements Comparable<Object> {
 	private String local;
 	private String textoSecreto;

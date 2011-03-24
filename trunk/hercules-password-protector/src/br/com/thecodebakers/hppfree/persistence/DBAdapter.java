@@ -1,5 +1,9 @@
 /*
- * Copyright (C) 2011 The Code Backers - Cleuton Sampaio e Francisco Rodrigues
+ * Copyright (C) 2011 The Code Bakers
+ * Authors: Cleuton Sampaio e Francisco Rodrigues
+ * e-mail: thecodebakers@gmail.com
+ * Project: http://code.google.com/p/hercules-password-protector
+ * Site: http://thecodebakers.blogspot.com
  *
  * Licensed under the GNU GPL, Version 3.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -12,7 +16,11 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
+ * 
+ * @author Cleuton Sampaio e Francisco Rogrigues - thecodebakers@gmail.com
  */
+
+
 
 package br.com.thecodebakers.hppfree.persistence;
 
@@ -33,6 +41,15 @@ import br.com.thecodebakers.hppfree.model.Agregador;
 import br.com.thecodebakers.hppfree.model.Elemento;
 import br.com.thecodebakers.hppfree.util.CriptoUtil;
 
+/**
+ * Esta classe é o que se poderia chamar de "DAO". Ela é uma interface de alto nível para o acesso ao
+ * banco de dados SQLite, deixando o BO livre de comandos de persistência.
+ * 
+ * Ela usa os serviços de uma outra classe de baixo nível: DBHelper.
+ * 
+ * @author Cleuton Sampaio e Francisco Rogrigues - thecodebakers@gmail.com
+ *
+ */
 public class DBAdapter implements IDBAdapter {
 	
 	private SQLiteDatabase db = null;
