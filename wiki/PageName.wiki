@@ -6,7 +6,7 @@ Bem vindo ao projeto Hercules Password Protector, do grupo The Code Bakers.
 
 = Details =
 
-O manual de uso do Hercules Password Protector está AQUI.
+O manual de uso do Hercules Password Protector está [http://code.google.com/p/hercules-password-protector/downloads/detail?name=HPP_Manual_V01010002.pdf&can=2&q= AQUI].
 
 O guia de setup da plataforma de desenvolvimento Android está AQUI.
 
