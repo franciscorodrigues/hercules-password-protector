@@ -46,8 +46,10 @@
     <string name="tit_cancelar">Cancelar</string>
     <string name="tit_ajuda3">Use o botão \"menu\"</string>
     <string name="tit_ajuda4">O botão \"back\" retorna</string>
-    <string name="tit_ajuda5">Para adquirir a versão paga:</string>
-    <string name="tit_ajuda6">www.thecodebakers.com.br</string>
+    <string name="tit_ajuda5">Para maiores informações:</string>
+    <string name="tit_ajuda6">thecodebakers.blogspot.com</string>
+    <string name="tit_ajuda7">Baixe o manual completo:</string>
+    <string name="tit_ajuda8">MANUAL</string>
     <string name="VERSAO">Hercules Password Protector (1.01.0002)</string>
     <string name="menu_salvar_backup">Salvar backup</string>
     <string name="menu_restaurar_backup">Restaurar Backup</string>

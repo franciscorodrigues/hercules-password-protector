@@ -146,7 +146,7 @@ public class ListaComDados01 extends Activity {
 	}
 	
 	public void web(View view) {
-		Intent viewIntent = new Intent("android.intent.action.VIEW", Uri.parse("http://www.google.com"));
+		Intent viewIntent = new Intent("android.intent.action.VIEW", Uri.parse("http://thecodebakers.blogspot.com"));
 		startActivity(viewIntent); 
 	}
 	@Override
