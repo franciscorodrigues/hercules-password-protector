@@ -47,7 +47,12 @@ public class Ajuda extends Activity {
 	}
 	
 	public void web(View view) {
-		Intent viewIntent = new Intent("android.intent.action.VIEW", Uri.parse("http://www.google.com"));
+		Intent viewIntent = new Intent("android.intent.action.VIEW", Uri.parse("http://thecodebakers.blogspot.com"));
+		startActivity(viewIntent); 
+	}
+	
+	public void mostrarManual(View view) {
+		Intent viewIntent = new Intent("android.intent.action.VIEW", Uri.parse("http://code.google.com/p/hercules-password-protector/downloads/detail?name=HPP_Manual_V01010002.pdf"));
 		startActivity(viewIntent); 
 	}
 	
