@@ -360,9 +360,9 @@ public class MostrarLista02 extends Activity implements OnItemClickListener {
 	@Override
 	 public void onCreateContextMenu(ContextMenu menu, View v,
 	 		 						 ContextMenuInfo menuInfo) {
-	        
+		Resources res = getResources();
 	 	 super.onCreateContextMenu(menu, v, menuInfo);
-	 	 menu.setHeaderTitle("Escolha um ação:");
+	 	 menu.setHeaderTitle(res.getString(R.string.menu_context_titulo));
 	 	 MenuInflater inflater = getMenuInflater();
 	 	 inflater.inflate(R.menu.menu_context_mostrar_lista, menu);
 	    
