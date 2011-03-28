@@ -24,7 +24,7 @@
  -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
       package="br.com.thecodebakers.hppfree"
-      android:versionCode="1010003"
+      android:versionCode="1010004"
       android:versionName="@string/VERSAO">
     <uses-sdk android:minSdkVersion="7" />
 	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />

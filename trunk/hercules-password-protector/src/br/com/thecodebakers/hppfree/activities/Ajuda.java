@@ -52,7 +52,7 @@ public class Ajuda extends Activity {
 	}
 	
 	public void mostrarManual(View view) {
-		Intent viewIntent = new Intent("android.intent.action.VIEW", Uri.parse("http://code.google.com/p/hercules-password-protector/downloads/detail?name=HPP_Manual_V01010002.pdf"));
+		Intent viewIntent = new Intent("android.intent.action.VIEW", Uri.parse("http://code.google.com/p/hercules-password-protector/downloads/list"));
 		startActivity(viewIntent); 
 	}
 	
