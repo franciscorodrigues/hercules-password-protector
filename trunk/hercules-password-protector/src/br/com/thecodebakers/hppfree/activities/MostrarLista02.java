@@ -421,7 +421,7 @@ public class MostrarLista02 extends Activity implements OnItemClickListener {
 	 }
 	 
 	 
-	  //solução antes do service que monitorar o screen on/off 
+	   
 	   
 	 @Override
 	 protected void onPause() {
