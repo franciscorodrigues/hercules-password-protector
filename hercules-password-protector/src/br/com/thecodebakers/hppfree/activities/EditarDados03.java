@@ -24,20 +24,15 @@ package br.com.thecodebakers.hppfree.activities;
 
 import android.app.Activity;
 import android.app.AlertDialog;
-import android.content.BroadcastReceiver;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.IntentFilter;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.ContextMenu;
-import android.view.ContextMenu.ContextMenuInfo;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.AdapterView.AdapterContextMenuInfo;
 import android.widget.EditText;
 import br.com.thecodebakers.hppfree.R;
 import br.com.thecodebakers.hppfree.business.HppFreeBO;
@@ -151,7 +146,7 @@ public class EditarDados03 extends Activity implements DialogInterface.OnClickLi
     			else {
     				Log.d(TAG, "Vai atualizar o registro no BO;");
     				Elemento elemento = new Elemento();
- 
+    				elemento.setUUID(uuidInformado);
 					elemento.setLocal(local.getText().toString());
 					elemento.setTextoSecreto(textoSecreto.getText().toString());
 					bo.saveElement(elemento);
