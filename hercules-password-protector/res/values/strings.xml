@@ -50,7 +50,7 @@
     <string name="tit_ajuda6">thecodebakers.blogspot.com</string>
     <string name="tit_ajuda7">Download the PDF manual, clicking: </string>
     <string name="tit_ajuda8">MANUAL</string>
-    <string name="VERSAO">Hercules Protector (1.01.0004)</string>
+    <string name="VERSAO">Hercules Protector (1.01.0005)</string>
     <string name="menu_salvar_backup">Save backup</string>
     <string name="menu_restaurar_backup">Restore Backup</string>
     <string name="msg_salvar_backup_ok">The backup has been saved in your SDcard.</string>
