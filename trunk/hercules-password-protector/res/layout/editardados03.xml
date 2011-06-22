@@ -61,7 +61,7 @@
 	
 	
 	   	<ImageView
-	   		android:layout_alignParentBottom="true"
+	   		android:layout_below="@+id/txtTextoSecreto"
 	   		android:layout_alignParentLeft="true"
 	   		android:src="@drawable/ok"
 	   		android:layout_gravity="left" 
@@ -71,7 +71,7 @@
 			android:onClick="salvar"
 			></ImageView>	
 		<ImageView
-	   		android:layout_alignParentBottom="true"
+	   		android:layout_below="@+id/txtTextoSecreto"
 	   		android:layout_alignParentRight="true"
 	   		android:src="@drawable/cancelar"
 	   		android:layout_gravity="left" 
