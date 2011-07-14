@@ -5,7 +5,7 @@
  * Authors: Cleuton Sampaio e Francisco Rodrigues
  * e-mail: thecodebakers@gmail.com
  * Project: http://code.google.com/p/hercules-password-protector
- * Site: http://thecodebakers.blogspot.com
+ * Site: http://www.thecodebakers.org
  *
  * Licensed under the GNU GPL, Version 3.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -25,12 +25,31 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
 	android:layout_width="fill_parent"
   	android:layout_height="fill_parent">
-	<TableLayout  xmlns:android="http://schemas.android.com/apk/res/android" 
+  	
+  	
+  	<TableLayout  xmlns:android="http://schemas.android.com/apk/res/android" 
 		android:layout_width="fill_parent"
 	  	android:layout_height="fill_parent" 
 		android:id="@+id/tableLayout1"
-		android:layout_alignParentTop="true"
-		>
+		android:layout_alignParentTop="true">
+		
+		<TableRow android:gravity="center_horizontal">
+			<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	              xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+	              android:orientation="vertical"
+	              android:layout_width="fill_parent"
+	              android:layout_height="fill_parent">
+	  				<com.google.ads.AdView android:id="@+id/adViewListaComDados"
+	                         android:layout_width="wrap_content"
+	                         android:layout_height="wrap_content"
+	                         ads:adUnitId="[SEU ID]"
+	                         ads:adSize="BANNER"
+	                         ads:loadAdOnCreate="true"/>
+			</LinearLayout>	
+		</TableRow>
+		
+		<TableRow android:gravity="center_horizontal" android:padding="5px"></TableRow>
+		
 		<TableRow android:gravity="center_horizontal">
 			<TextView 
 				android:text="@string/labelSenha" 
@@ -52,10 +71,11 @@
 				android:layout_weight="10"
 				/>
 		</TableRow>
+		
 	
 	</TableLayout>
 	
-		<ImageView
+	<ImageView
 			android:layout_centerInParent="true"
 			android:src="@drawable/cadeado_fechado"
 			android:id="@+id/btnAbrir" 
@@ -63,9 +83,9 @@
 			android:onClick="abrirCofre"
 			android:layout_height="90dip" 
 			android:layout_width="90dip"  
-			></ImageView>
+			/>
 
-		<ImageView
+	<ImageView
 			android:layout_below="@+id/btnAbrir"		
 			android:layout_centerHorizontal="true"
 			android:src="@drawable/logo"
@@ -74,10 +94,10 @@
 			android:onClick="web"
 			android:layout_height="wrap_content" 
 			android:layout_width="wrap_content"
-			></ImageView>
+			/>
+		
 
-
-		<TextView 
+	<TextView 
 			android:text="@string/lbl_ajuda" 
 			style="@style/pequeno"
 			android:gravity="center_horizontal"
@@ -87,4 +107,7 @@
 			android:layout_alignParentBottom="true"
 			android:layout_centerHorizontal="true"
 			/>
+			
+	
+		
 </RelativeLayout>

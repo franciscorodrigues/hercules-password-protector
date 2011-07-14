@@ -5,7 +5,7 @@
  * Authors: Cleuton Sampaio e Francisco Rodrigues
  * e-mail: thecodebakers@gmail.com
  * Project: http://code.google.com/p/hercules-password-protector
- * Site: http://thecodebakers.blogspot.com
+ * Site: http://www.thecodebakers.org
  *
  * Licensed under the GNU GPL, Version 3.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -29,10 +29,37 @@
 	android:layout_height="wrap_content"
 	android:scrollbars="vertical"
 	android:fadeScrollbars="false">
-	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+	
+	<TableLayout
+    		xmlns:android="http://schemas.android.com/apk/res/android"
+    		android:layout_width="fill_parent"
+    		android:layout_height="fill_parent">
+ 
+ 	
+	   <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	              xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+	              android:orientation="vertical"
+	              android:layout_width="fill_parent"
+	              android:layout_height="fill_parent">
+	  			  <com.google.ads.AdView android:id="@+id/adViewAjuda"
+	                         android:layout_width="wrap_content"
+	                         android:layout_height="wrap_content"
+	                         ads:adUnitId="[SEU ID]"
+	                         ads:adSize="BANNER"
+	                         ads:loadAdOnCreate="true"/>
+	                    
+		                		
+	  </LinearLayout>
+	
+	
+	  <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
 		android:layout_width="fill_parent"
-	  	android:layout_height="fill_parent">
+	  	android:layout_height="fill_parent"
+	  	xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads">
 	  	
+	  	
+			
+	
 		<ImageView
 			android:layout_centerHorizontal="true"
 			android:src="@drawable/logo"
@@ -211,8 +238,10 @@
 			android:src="@drawable/polegar_positivo" 
 			android:layout_height="wrap_content" 
 			android:layout_width="wrap_content" 
-			android:onClick="fechar"
-			></ImageView>
-			
-	</RelativeLayout>>
+			android:onClick="fechar"/>
+	 	
+	 	
+	</RelativeLayout>
+
+  </TableLayout>
 </ScrollView>
