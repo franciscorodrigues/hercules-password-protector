@@ -24,12 +24,13 @@
 
 package br.com.thecodebakers.hppfree.activities;
 
+import com.google.ads.AdRequest;
+import com.google.ads.AdView;
+
 import android.app.Activity;
 import android.app.AlertDialog;
-import android.content.BroadcastReceiver;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.IntentFilter;
 import android.content.res.Resources;
 import android.net.Uri;
 import android.os.Bundle;
@@ -65,7 +66,8 @@ public class ListaComDados01 extends Activity {
         	bo.closeVault();
         }
         
-       
+        AdView adView = (AdView)this.findViewById(R.id.adViewListaComDados);
+	    adView.loadAd(new AdRequest());
     }
 
 	@Override
@@ -146,7 +148,7 @@ public class ListaComDados01 extends Activity {
 	}
 	
 	public void web(View view) {
-		Intent viewIntent = new Intent("android.intent.action.VIEW", Uri.parse("http://thecodebakers.blogspot.com"));
+		Intent viewIntent = new Intent("android.intent.action.VIEW", Uri.parse("http://www.thecodebakers.org"));
 		startActivity(viewIntent); 
 	}
 	@Override

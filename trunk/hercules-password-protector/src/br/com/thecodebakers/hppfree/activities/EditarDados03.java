@@ -39,6 +39,9 @@ import br.com.thecodebakers.hppfree.business.HppFreeBO;
 import br.com.thecodebakers.hppfree.model.Elemento;
 import br.com.thecodebakers.hppfree.util.HPPReceiver;
 
+import com.google.ads.AdRequest;
+import com.google.ads.AdView;
+
 /**
  * Activity que permite editar registros de dados. Podem ser novos registros ou registros
  * já existentes.
@@ -67,6 +70,8 @@ public class EditarDados03 extends Activity implements DialogInterface.OnClickLi
         selfRef = this;
         bo = HppFreeBO.getInstance(this.getApplicationContext());
        
+        AdView adView = (AdView)this.findViewById(R.id.adViewEditarDados);
+	    adView.loadAd(new AdRequest());
     }
     
     
@@ -101,6 +106,8 @@ public class EditarDados03 extends Activity implements DialogInterface.OnClickLi
 	    	textoSecretoOriginal = elemento.getTextoSecreto();
 	    	
 		}
+		
+		
 	}
 
 

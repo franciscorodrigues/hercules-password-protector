@@ -23,6 +23,8 @@
 
 package br.com.thecodebakers.hppfree.activities;
 
+import static br.com.thecodebakers.hppfree.constants.GlobalConstants.RETORNO_OK;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -53,7 +55,9 @@ import br.com.thecodebakers.hppfree.business.HppFreeBO;
 import br.com.thecodebakers.hppfree.constants.GlobalConstants;
 import br.com.thecodebakers.hppfree.model.Elemento;
 import br.com.thecodebakers.hppfree.util.HPPReceiver;
-import static br.com.thecodebakers.hppfree.constants.GlobalConstants.*;
+
+import com.google.ads.AdRequest;
+import com.google.ads.AdView;
 
 /**
  * Activity que exibe a lista de registros atualmente guardada no cofre.
@@ -81,14 +85,10 @@ public class MostrarLista02 extends Activity implements OnItemClickListener {
 			showMessage(extras.getString("bkpmsg"), null);
     	}
 	    	
-        
-        
         bo = HppFreeBO.getInstance(this.getApplicationContext());
         listView = (ListView)findViewById(android.R.id.list);
         listView.setTextFilterEnabled(true);
         
-        //Resources res = getResources();
-		//String text = res.getString(R.string.lblLocal);
 		
 		List<String> listaEl = PreparaLista(bo.getLista());
        
@@ -109,6 +109,8 @@ public class MostrarLista02 extends Activity implements OnItemClickListener {
         BroadcastReceiver mReceiver = new HPPReceiver();
         registerReceiver(mReceiver, filter);
 		
+        AdView adView = (AdView)this.findViewById(R.id.adViewMostrarLista);
+	    adView.loadAd(new AdRequest());
         
     }
         
@@ -121,7 +123,9 @@ public class MostrarLista02 extends Activity implements OnItemClickListener {
     		Intent i = new Intent(this, ListaComDados01.class);
             startActivity(i);
             finish();
-        }		
+        }	
+        
+       
 	}
 
 	private void showMessage(String caption, String title){

@@ -21,15 +21,13 @@
  */
 package br.com.thecodebakers.hppfree.activities;
 
-import br.com.thecodebakers.hppfree.R;
-import br.com.thecodebakers.hppfree.business.HppFreeBO;
-import br.com.thecodebakers.hppfree.util.HPPReceiver;
+import com.google.ads.AdRequest;
+import com.google.ads.AdView;
+
 import android.app.Activity;
 import android.app.AlertDialog;
-import android.content.BroadcastReceiver;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.IntentFilter;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.util.Log;
@@ -38,6 +36,9 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
+import br.com.thecodebakers.hppfree.R;
+import br.com.thecodebakers.hppfree.business.HppFreeBO;
+import br.com.thecodebakers.hppfree.util.HPPReceiver;
 
 /**
  * Activity que permite alterar a senha do cofre.
@@ -63,6 +64,8 @@ public class AlterarSenha20 extends Activity {
 		bo = HppFreeBO.getInstance(this.getApplicationContext());
 		
 		
+		AdView adView = (AdView)this.findViewById(R.id.adViewAlterarSenha);
+	    adView.loadAd(new AdRequest());
 	}
 	
 	/**
