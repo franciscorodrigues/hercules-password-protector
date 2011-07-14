@@ -50,7 +50,7 @@
     <string name="tit_ajuda6">thecodebakers.blogspot.com</string>
     <string name="tit_ajuda7">Baixe o manual completo:</string>
     <string name="tit_ajuda8">MANUAL</string>
-    <string name="VERSAO">Hercules Protector (1.01.0005)</string>
+    <string name="VERSAO">Hercules Protector (1.01.0006)</string>
     <string name="menu_salvar_backup">Salvar backup</string>
     <string name="menu_restaurar_backup">Restaurar Backup</string>
     <string name="msg_salvar_backup_ok">O backup foi salvo em seu sdcard.</string>
