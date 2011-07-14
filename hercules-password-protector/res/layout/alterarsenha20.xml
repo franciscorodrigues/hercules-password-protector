@@ -5,7 +5,7 @@
  * Authors: Cleuton Sampaio e Francisco Rodrigues
  * e-mail: thecodebakers@gmail.com
  * Project: http://code.google.com/p/hercules-password-protector
- * Site: http://thecodebakers.blogspot.com
+ * Site: http://www.thecodebakers.org
  *
  * Licensed under the GNU GPL, Version 3.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -25,7 +25,8 @@
 <RelativeLayout
   xmlns:android="http://schemas.android.com/apk/res/android"
   android:layout_width="fill_parent"
-  android:layout_height="fill_parent">
+  android:layout_height="fill_parent"
+  xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads">
 
 	<TextView 
 		android:text="@string/labelSenha"
@@ -45,8 +46,6 @@
 		android:layout_width="fill_parent" 
 		android:password="true"
 		/>
-
-
 	
 	<TextView 
    		android:layout_below="@+id/editSenha"
@@ -86,8 +85,11 @@
 		android:password="true"
 		/>
 	
+	
+	
+	
 	   	<ImageView
-	   		android:layout_alignParentBottom="true"
+	   		android:layout_below="@+id/confirmarSenha"
 	   		android:layout_alignParentLeft="true"
 	   		android:src="@drawable/ok"
 	   		android:layout_gravity="left" 
@@ -95,9 +97,10 @@
 			android:layout_height="wrap_content" 
 			android:layout_width="wrap_content" 
 			android:onClick="salvar"
-			></ImageView>	
+			/>
+				
 		<ImageView
-	   		android:layout_alignParentBottom="true"
+			android:layout_below="@+id/confirmarSenha"
 	   		android:layout_alignParentRight="true"
 	   		android:src="@drawable/cancelar"
 	   		android:layout_gravity="left" 
@@ -105,5 +108,17 @@
 			android:layout_height="wrap_content" 
 			android:layout_width="wrap_content" 
 			android:onClick="cancelar"
-			></ImageView>
+			/>
+		
+		<!-- We need some cash, man! -->
+ 		<com.google.ads.AdView 
+ 					android:layout_alignParentBottom="true"
+ 					android:id="@+id/adViewAlterarSenha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    ads:adUnitId="[SEU ID]"
+                    ads:adSize="BANNER"
+                    ads:loadAdOnCreate="true"/>
+		
+		
 </RelativeLayout> 

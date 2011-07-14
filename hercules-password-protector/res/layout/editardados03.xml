@@ -5,7 +5,7 @@
  * Authors: Cleuton Sampaio e Francisco Rodrigues
  * e-mail: thecodebakers@gmail.com
  * Project: http://code.google.com/p/hercules-password-protector
- * Site: http://thecodebakers.blogspot.com
+ * Site: http://www.thecodebakers.org
  *
  * Licensed under the GNU GPL, Version 3.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -25,7 +25,8 @@
 <RelativeLayout
   xmlns:android="http://schemas.android.com/apk/res/android"
   android:layout_width="fill_parent"
-  android:layout_height="fill_parent">
+  android:layout_height="fill_parent"
+  xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads">
 
    <TextView 
    		android:layout_alignParentTop="true"
@@ -58,26 +59,35 @@
 		android:maxLines="1" 
 		android:layout_height="wrap_content"   
 		android:layout_width="fill_parent"/>
-	
-	
-	   	<ImageView
-	   		android:layout_below="@+id/txtTextoSecreto"
+		
+	 <ImageView
 	   		android:layout_alignParentLeft="true"
+	   		android:layout_below="@+id/txtTextoSecreto"
 	   		android:src="@drawable/ok"
 	   		android:layout_gravity="left" 
 			android:id="@+id/btnSalvar" 
 			android:layout_height="wrap_content" 
 			android:layout_width="wrap_content" 
 			android:onClick="salvar"
-			></ImageView>	
-		<ImageView
+			/>	
+			
+	<ImageView
+			android:layout_alignParentRight="true"
 	   		android:layout_below="@+id/txtTextoSecreto"
-	   		android:layout_alignParentRight="true"
 	   		android:src="@drawable/cancelar"
 	   		android:layout_gravity="left" 
 			android:id="@+id/btnCancelar" 
 			android:layout_height="wrap_content" 
 			android:layout_width="wrap_content" 
 			android:onClick="cancelar"
-			></ImageView>
+			/>
+	<!-- We need some cash, man! -->		
+	<com.google.ads.AdView android:id="@+id/adViewEditarDados"
+  			android:layout_alignParentBottom="true"
+  			android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            ads:adUnitId="[SEU ID]"
+            ads:adSize="BANNER"
+            ads:loadAdOnCreate="true"/>
 </RelativeLayout>
+	
