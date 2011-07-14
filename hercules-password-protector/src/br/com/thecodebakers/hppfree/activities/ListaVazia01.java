@@ -26,10 +26,8 @@ package br.com.thecodebakers.hppfree.activities;
 
 import android.app.Activity;
 import android.app.AlertDialog;
-import android.content.BroadcastReceiver;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.IntentFilter;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.text.Editable;

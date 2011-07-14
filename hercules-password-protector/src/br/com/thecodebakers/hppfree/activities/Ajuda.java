@@ -23,6 +23,9 @@
 
 package br.com.thecodebakers.hppfree.activities;
 
+import com.google.ads.AdRequest;
+import com.google.ads.AdView;
+
 import br.com.thecodebakers.hppfree.R;
 import android.app.Activity;
 import android.content.Intent;
@@ -40,6 +43,9 @@ public class Ajuda extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.ajuda);
+		
+		AdView adView = (AdView)this.findViewById(R.id.adViewAjuda);
+	    adView.loadAd(new AdRequest());
 	}
 	
 	public void fechar(View view) {
@@ -47,7 +53,7 @@ public class Ajuda extends Activity {
 	}
 	
 	public void web(View view) {
-		Intent viewIntent = new Intent("android.intent.action.VIEW", Uri.parse("http://thecodebakers.blogspot.com"));
+		Intent viewIntent = new Intent("android.intent.action.VIEW", Uri.parse("http://www.thecodebakers.org"));
 		startActivity(viewIntent); 
 	}
 	
